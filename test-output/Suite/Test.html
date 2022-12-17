@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Dec 03 19:17:28 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>37 seconds (37690 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cucumber.test.Runnerfile.runScenario()'><b>runScenario</b><br>Test class: com.cucumber.test.Runnerfile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "As a user, must do sucessfully login with valid credential", "Login"</td>
+<td><div><pre>java.nio.file.InvalidPathException: Trailing char &lt; &gt; at index 20: .\target\Screen shot \Home Page.png
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:172)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)
+	at java.base/java.io.File.toPath(File.java:2329)
+	at org.codehaus.plexus.util.NioFiles.copy(NioFiles.java:140)
+	at org.codehaus.plexus.util.FileUtils.doCopyFileUsingNewIO(FileUtils.java:1147)
+	at org.codehaus.plexus.util.FileUtils.doCopyFile(FileUtils.java:1097)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1082)
+	at com.util.ScreenShot.getScreenShot(ScreenShot.java:22)
+	at com.cucumber.test.StepDef.go_to_application_URL(StepDef.java:34)
+	at ✽.Go to application URL(file:src/main/resources/Features/Login.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1657512321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1657512321'><pre>java.nio.file.InvalidPathException: Trailing char &lt; &gt; at index 20: .\target\Screen shot \Home Page.png
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:172)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)
+	at java.base/java.io.File.toPath(File.java:2329)
+	at org.codehaus.plexus.util.NioFiles.copy(NioFiles.java:140)
+	at org.codehaus.plexus.util.FileUtils.doCopyFileUsingNewIO(FileUtils.java:1147)
+	at org.codehaus.plexus.util.FileUtils.doCopyFile(FileUtils.java:1097)
+	at org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1082)
+	at com.util.ScreenShot.getScreenShot(ScreenShot.java:22)
+	at com.cucumber.test.StepDef.go_to_application_URL(StepDef.java:34)
+	at ✽.Go to application URL(file:src/main/resources/Features/Login.feature:8)
+</pre></div></td>
+<td>37</td>
+<td>com.cucumber.test.Runnerfile@783a467b</td></tr>
+</table><p>
+</body>
+</html>

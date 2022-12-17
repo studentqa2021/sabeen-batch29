@@ -1,0 +1,125 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "As a user, must do sucessfully login with valid credential",
+        "description": "",
+        "id": "login;as-a-user--must-do-sucessfully-login-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31774523800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open a browser",
+            "match": {
+              "location": "StepDef.open_a_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.nio.file.InvalidPathException: Trailing char \u003c \u003e at index 20: .\\target\\Screen shot \\Home Page.png\r\n\tat java.base/sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:172)\r\n\tat java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)\r\n\tat java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)\r\n\tat java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:92)\r\n\tat java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:229)\r\n\tat java.base/java.io.File.toPath(File.java:2329)\r\n\tat org.codehaus.plexus.util.NioFiles.copy(NioFiles.java:140)\r\n\tat org.codehaus.plexus.util.FileUtils.doCopyFileUsingNewIO(FileUtils.java:1147)\r\n\tat org.codehaus.plexus.util.FileUtils.doCopyFile(FileUtils.java:1097)\r\n\tat org.codehaus.plexus.util.FileUtils.copyFile(FileUtils.java:1082)\r\n\tat com.util.ScreenShot.getScreenShot(ScreenShot.java:22)\r\n\tat com.cucumber.test.StepDef.go_to_application_URL(StepDef.java:34)\r\n\tat ✽.Go to application URL(file:src/main/resources/Features/Login.feature:8)\r\n",
+              "duration": 5224836500,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Go to application URL",
+            "match": {
+              "location": "StepDef.go_to_application_URL()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46500,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Click Sign in BTN",
+            "match": {
+              "location": "StepDef.click_Sign_in_BTN()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13500,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "put user email address",
+            "match": {
+              "location": "StepDef.put_user_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40900,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Put password",
+            "match": {
+              "location": "StepDef.put_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Click Second login BTN",
+            "match": {
+              "location": "StepDef.click_Second_login_BTN()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20100,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Validation",
+            "match": {
+              "location": "StepDef.validation()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          },
+          {
+            "name": "@TC_101"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/Features/Login.feature",
+    "tags": [
+      {
+        "name": "@smoketest",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
